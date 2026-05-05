@@ -31,7 +31,7 @@ export default function Home() {
       />
       <Video />
       <FutureSwimSection />
-      <FlyerParkDesignSection />
+      {/* <FlyerParkDesignSection /> */}
       <Footer />
     </div>
   );
