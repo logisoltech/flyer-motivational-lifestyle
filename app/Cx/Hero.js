@@ -38,7 +38,7 @@ export default function Hero() {
         sizes="100vw"
       />
       <div
-        className="pointer-events-none absolute inset-0 z-10 bg-black/50"
+        className="pointer-events-none absolute inset-0 z-10 bg-black/60"
         aria-hidden
       />
       {/* Top vignette so logo & pill nav stay readable */}
