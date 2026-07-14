@@ -30,7 +30,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen w-full overflow-hidden">
       <Image
-        src="/Design-1.png"
+        src="/flyer-park-parked-002.png"
         alt=""
         fill
         priority
@@ -38,7 +38,7 @@ export default function Hero() {
         sizes="100vw"
       />
       <div
-        className="pointer-events-none absolute inset-0 z-10 bg-black/60"
+        className="pointer-events-none absolute inset-0 z-10 bg-black/20"
         aria-hidden
       />
       {/* Top vignette so logo & pill nav stay readable */}

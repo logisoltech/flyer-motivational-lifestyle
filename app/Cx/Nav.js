@@ -142,7 +142,7 @@ export default function Nav() {
         </a>
         <a
           href="#"
-          className="rounded-full border border-[#e3b53f] px-5 py-2.5 text-sm font-semibold text-[#e3b53f] transition hover:bg-[#e3b53f] hover:text-black"
+          className="rounded-full bg-[#e3b53f] px-5 py-2.5 text-sm font-semibold text-black transition hover:bg-[#f0c94a]"
         >
           Buy M.D Crypto
         </a>
