@@ -87,6 +87,23 @@ export default function Nav() {
             </li>
           ))}
         </ul>
+
+        <div className="mt-10 flex flex-col items-center gap-4">
+          <a
+            href="#"
+            onClick={() => setOpen(false)}
+            className="rounded-full bg-[#e3b53f] px-7 py-3 text-base font-semibold text-black shadow-lg transition hover:bg-[#f0c94a]"
+          >
+            Invest / Donate
+          </a>
+          <a
+            href="#"
+            onClick={() => setOpen(false)}
+            className="rounded-full border border-[#e3b53f] px-7 py-3 text-base font-semibold text-[#e3b53f] transition hover:bg-[#e3b53f] hover:text-black"
+          >
+            Buy M.D Crypto
+          </a>
+        </div>
       </div>
 
       {/* Desktop pill nav */}
@@ -110,6 +127,26 @@ export default function Nav() {
           ))}
         </ul>
       </nav>
+
+      {/* Desktop CTA buttons (right side, outside nav) */}
+      <div
+        className="absolute right-8 top-8 z-30 hidden items-center gap-3 sm:flex"
+        data-aos="fade-down"
+        data-aos-delay="200"
+      >
+        <a
+          href="#"
+          className="rounded-full bg-[#e3b53f] px-5 py-2.5 text-sm font-semibold text-black shadow-lg transition hover:bg-[#f0c94a]"
+        >
+          Invest / Donate
+        </a>
+        <a
+          href="#"
+          className="rounded-full border border-[#e3b53f] px-5 py-2.5 text-sm font-semibold text-[#e3b53f] transition hover:bg-[#e3b53f] hover:text-black"
+        >
+          Buy M.D Crypto
+        </a>
+      </div>
     </>
   );
 }
