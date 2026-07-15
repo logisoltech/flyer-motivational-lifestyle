@@ -30,7 +30,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen w-full overflow-hidden">
       <Image
-        src="/flyer-park-parked-002.png"
+        src="/flyer-park-parked-003.png"
         alt=""
         fill
         priority
