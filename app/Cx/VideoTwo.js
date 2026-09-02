@@ -38,7 +38,7 @@ export default function VideoTwo() {
         <video
           ref={videoRef}
           className="absolute inset-0 h-full w-full object-cover"
-          src="/vid-2.mp4"
+          src="/flyer-video.mp4"
           playsInline
           preload="metadata"
           controls={isPlaying}
