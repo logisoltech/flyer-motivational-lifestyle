@@ -51,7 +51,7 @@ export default function Nav() {
         aria-label={open ? "Close menu" : "Open menu"}
         aria-expanded={open}
         aria-controls="mobile-menu"
-        className="absolute right-5 top-6 z-40 inline-flex size-11 items-center justify-center rounded-full border border-white/10 bg-black/40 text-white shadow-lg backdrop-blur-md transition hover:bg-black/55 sm:hidden"
+        className="absolute right-5 top-1.5 z-40 inline-flex size-11 items-center justify-center rounded-full border border-white/10 bg-black/40 text-white shadow-lg backdrop-blur-md transition hover:bg-black/55 sm:hidden"
         data-aos="fade-down"
         data-aos-delay="150"
       >
@@ -108,7 +108,7 @@ export default function Nav() {
 
       {/* Desktop pill nav */}
       <nav
-        className="absolute left-1/2 top-8 z-30 hidden -translate-x-1/2 rounded-full border border-white/10 bg-black/40 px-20 py-3 shadow-lg backdrop-blur-md sm:block"
+        className="absolute left-1/2 top-2 z-30 hidden -translate-x-1/2 rounded-full border border-white/10 bg-black/40 px-20 py-3 shadow-lg backdrop-blur-md sm:block"
         aria-label="Primary"
         data-aos="fade-down"
         data-aos-delay="150"
@@ -130,7 +130,7 @@ export default function Nav() {
 
       {/* Desktop CTA buttons (right side, outside nav) */}
       <div
-        className="absolute right-8 top-8 z-30 hidden items-center gap-3 sm:flex"
+        className="absolute right-8 top-2 z-30 hidden items-center gap-3 sm:flex"
         data-aos="fade-down"
         data-aos-delay="200"
       >
