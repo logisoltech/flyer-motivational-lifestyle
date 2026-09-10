@@ -92,7 +92,7 @@ export default function Nav() {
           <a
             href="#"
             onClick={() => setOpen(false)}
-            className="rounded-full bg-[#e3b53f] px-7 py-3 text-base font-semibold text-black shadow-lg transition hover:bg-[#f0c94a]"
+            className="rounded-full bg-[#e3b53f] px-7 py-2.5 text-lg font-semibold leading-none text-black shadow-lg transition hover:bg-[#f0c94a]"
           >
             Invest / Donate
           </a>
@@ -136,7 +136,7 @@ export default function Nav() {
       >
         <a
           href="#"
-          className="rounded-full bg-[#e3b53f] px-5 py-2.5 text-sm font-semibold text-black shadow-lg transition hover:bg-[#f0c94a]"
+          className="rounded-full bg-[#e3b53f] px-5 py-2.5 text-base font-semibold leading-none text-black shadow-lg transition hover:bg-[#f0c94a]"
         >
           Invest / Donate
         </a>
