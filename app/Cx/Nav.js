@@ -99,7 +99,7 @@ export default function Nav() {
           <a
             href="#"
             onClick={() => setOpen(false)}
-            className="rounded-full border border-[#e3b53f] px-7 py-3 text-base font-semibold text-[#e3b53f] transition hover:bg-[#e3b53f] hover:text-black"
+            className="rounded-full border border-[#e3b53f] px-7 py-2.5 text-lg font-semibold leading-none text-[#e3b53f] transition hover:bg-[#e3b53f] hover:text-black"
           >
             Buy M.D Crypto
           </a>
@@ -142,7 +142,7 @@ export default function Nav() {
         </a>
         <a
           href="#"
-          className="rounded-full bg-[#e3b53f] px-5 py-2.5 text-sm font-semibold text-black transition hover:bg-[#f0c94a]"
+          className="rounded-full bg-[#e3b53f] px-5 py-2.5 text-base font-semibold leading-none text-black transition hover:bg-[#f0c94a]"
         >
           Buy M.D Crypto
         </a>
