@@ -40,7 +40,7 @@ export default function Hero() {
 
       <a
         href="https://motivational-lifestyle.vercel.app/"
-        className="absolute left-6 top-1.5 z-30 sm:left-8 sm:top-2"
+        className="absolute left-6 top-2.5 z-30 sm:left-8 sm:top-3"
         aria-label="Home"
         data-aos="fade-right"
         data-aos-delay="80"
