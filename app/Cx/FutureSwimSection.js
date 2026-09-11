@@ -5,9 +5,9 @@ import Image from "next/image";
 import { FaTimes } from "react-icons/fa";
 
 const CARDS = [
-  { src: "/swim.png", alt: "Flyer parked near a pool" },
-  { src: "/swimming.png", alt: "Top view of pool and flyer pads" },
-  { src: "/future.png", alt: "Future flyer concept cockpit view" },
+  { src: "/shot1.png", alt: "Flyer parked near a pool" },
+  { src: "/shot2.png", alt: "Top view of pool and flyer pads" },
+  { src: "/shot3.png", alt: "Future flyer concept cockpit view" },
 ];
 
 export default function FutureSwimSection() {
