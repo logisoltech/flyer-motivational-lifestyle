@@ -3,6 +3,7 @@ import HelicopterSection from "./Cx/HelicopterSection";
 import VideoTwo from "./Cx/VideoTwo";
 import FlyerDesignSection from "./Cx/FlyerDesignSection";
 import Video from "./Cx/Video";
+import FutureDroneDesignsSection from "./Cx/FutureDroneDesignsSection";
 import FutureSwimSection from "./Cx/FutureSwimSection";
 import FlyerParkDesignSection from "./Cx/FlyerParkDesignSection";
 import Footer from "./Cx/Footer";
@@ -11,8 +12,9 @@ export default function Home() {
   return (
     <div className="min-h-screen w-full min-w-0 overflow-x-visible">
       <Hero />
-      <HelicopterSection />
       <VideoTwo />
+      <FutureDroneDesignsSection />
+      <HelicopterSection />
       <FlyerDesignSection
         sectionId="flyer-designs"
         title="1 Flyer Design"
