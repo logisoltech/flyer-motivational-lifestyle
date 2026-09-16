@@ -50,6 +50,10 @@ export default function FutureDroneDesignsSection() {
             aria-hidden
           />
         </div>
+
+        <h2 className="mt-8 text-center text-4xl font-extrabold uppercase leading-none text-[#1f212b] sm:mt-10 sm:text-[3rem]">
+          2 In One Flyer
+        </h2>
       </section>
 
       {/* fullscreen image modal */}
