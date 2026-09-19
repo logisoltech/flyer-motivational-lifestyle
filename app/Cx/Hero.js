@@ -76,7 +76,7 @@ export default function Hero() {
             skies and reach any destination with ease. Equipped with
             cutting-edge A.I. technology, it navigates effortlessly, making it
             perfect for exploration, photography, or delivery. Experience the
-            freedom of flight like never before!
+            freedom of flight and home living like never before!
           </p>
         </div>
       </div>
