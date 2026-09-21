@@ -10,21 +10,31 @@ const LINKS = [
   { label: "Applications", href: "#flyer-park" },
 ];
 
+const btnClass =
+  "rounded-full bg-[#e3b53f] px-5 py-2.5 text-base font-semibold leading-none text-black shadow-lg transition hover:bg-[#f0c94a] text-center";
+
+const mobileBtnClass =
+  "rounded-full bg-[#e3b53f] px-7 py-2.5 text-lg font-semibold leading-none text-black shadow-lg transition hover:bg-[#f0c94a] text-center";
+
 export default function Nav() {
   const [open, setOpen] = useState(false);
+  const [contactOpen, setContactOpen] = useState(false);
 
   useEffect(() => {
-    if (!open) return;
+    if (!open && !contactOpen) return;
     const prev = document.body.style.overflow;
     document.body.style.overflow = "hidden";
     return () => {
       document.body.style.overflow = prev;
     };
-  }, [open]);
+  }, [open, contactOpen]);
 
   useEffect(() => {
     const onKey = (e) => {
-      if (e.key === "Escape") setOpen(false);
+      if (e.key === "Escape") {
+        setOpen(false);
+        setContactOpen(false);
+      }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
@@ -40,6 +50,11 @@ export default function Nav() {
     if (history.replaceState) {
       history.replaceState(null, "", href);
     }
+  };
+
+  const openContact = () => {
+    setOpen(false);
+    setContactOpen(true);
   };
 
   return (
@@ -89,19 +104,17 @@ export default function Nav() {
         </ul>
 
         <div className="mt-10 flex flex-col items-center gap-4">
-          <a
-            href="#"
-            onClick={() => setOpen(false)}
-            className="rounded-full bg-[#e3b53f] px-7 py-2.5 text-lg font-semibold leading-none text-black shadow-lg transition hover:bg-[#f0c94a]"
-          >
+          <a href="#" onClick={() => setOpen(false)} className={mobileBtnClass}>
             Invest / Donate
           </a>
-          <a
-            href="#"
-            onClick={() => setOpen(false)}
-            className="rounded-full border border-[#e3b53f] px-7 py-2.5 text-lg font-semibold leading-none text-[#e3b53f] transition hover:bg-[#e3b53f] hover:text-black"
-          >
+          <a href="#" onClick={() => setOpen(false)} className={mobileBtnClass}>
             Buy M.D Crypto
+          </a>
+          <button type="button" onClick={openContact} className={mobileBtnClass}>
+            Contact
+          </button>
+          <a href="#" onClick={() => setOpen(false)} className={mobileBtnClass}>
+            Financing Available
           </a>
         </div>
       </div>
@@ -130,23 +143,62 @@ export default function Nav() {
 
       {/* Desktop CTA buttons (right side, outside nav) */}
       <div
-        className="absolute right-8 top-3 z-30 hidden items-center gap-3 sm:flex"
+        className="absolute right-8 top-3 z-30 hidden flex-col items-stretch gap-2 sm:flex"
         data-aos="fade-down"
         data-aos-delay="200"
       >
-        <a
-          href="#"
-          className="rounded-full bg-[#e3b53f] px-5 py-2.5 text-base font-semibold leading-none text-black shadow-lg transition hover:bg-[#f0c94a]"
-        >
-          Invest / Donate
-        </a>
-        <a
-          href="#"
-          className="rounded-full bg-[#e3b53f] px-5 py-2.5 text-base font-semibold leading-none text-black transition hover:bg-[#f0c94a]"
-        >
-          Buy M.D Crypto
-        </a>
+        <div className="flex items-center gap-3">
+          <a href="#" className={btnClass}>
+            Invest / Donate
+          </a>
+          <a href="#" className={btnClass}>
+            Buy M.D Crypto
+          </a>
+        </div>
+        <div className="flex items-center gap-3">
+          <button type="button" onClick={openContact} className={btnClass}>
+            Contact
+          </button>
+          <a href="#" className={btnClass}>
+            Financing Available
+          </a>
+        </div>
       </div>
+
+      {/* Contact modal */}
+      {contactOpen && (
+        <div
+          className="fixed inset-0 z-[999] flex items-center justify-center bg-black/70 p-4"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="contact-modal-title"
+          onClick={() => setContactOpen(false)}
+        >
+          <div
+            className="relative w-full max-w-lg rounded-2xl bg-[#E2E0D1] px-6 py-8 shadow-2xl sm:px-8"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              type="button"
+              onClick={() => setContactOpen(false)}
+              className="absolute right-4 top-4 inline-flex size-9 items-center justify-center rounded-full text-neutral-700 transition hover:bg-black/10"
+              aria-label="Close contact"
+            >
+              <FaTimes className="size-4" aria-hidden />
+            </button>
+
+            <h3
+              id="contact-modal-title"
+              className="pr-8 text-center text-lg font-extrabold uppercase tracking-[0.02em] text-[#1f212b] sm:text-xl"
+            >
+              M.D. Motivational Enterprises LLC – Location
+            </h3>
+            <p className="mt-4 text-center text-base leading-relaxed text-[#262626] sm:text-lg">
+              56 St. NY. NY. 10019
+            </p>
+          </div>
+        </div>
+      )}
     </>
   );
 }
