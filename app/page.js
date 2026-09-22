@@ -4,6 +4,8 @@ import VideoTwo from "./Cx/VideoTwo";
 import FlyerDesignSection from "./Cx/FlyerDesignSection";
 import Video from "./Cx/Video";
 import FutureDroneDesignsSection from "./Cx/FutureDroneDesignsSection";
+import FutureDroneDesignsHeading from "./Cx/FutureDroneDesignsHeading";
+import TwoInOneFlyerHeading from "./Cx/TwoInOneFlyerHeading";
 import FutureSwimSection from "./Cx/FutureSwimSection";
 import FlyerParkDesignSection from "./Cx/FlyerParkDesignSection";
 import Footer from "./Cx/Footer";
@@ -14,6 +16,8 @@ export default function Home() {
       <Hero />
       <VideoTwo />
       <FutureDroneDesignsSection />
+      <FutureDroneDesignsHeading />
+      <TwoInOneFlyerHeading />
       <HelicopterSection />
       <FlyerDesignSection
         sectionId="flyer-designs"
@@ -31,8 +35,8 @@ export default function Home() {
         imageSrc="/flyer-3.png"
         imageAlt="3 Flyer design views"
       />
-      <Video />
-      <FutureSwimSection />
+      {/* <Video />
+      <FutureSwimSection /> */}
       {/* <FlyerParkDesignSection /> */}
       <Footer />
     </div>

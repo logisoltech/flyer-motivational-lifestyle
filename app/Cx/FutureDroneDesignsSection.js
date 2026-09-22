@@ -16,10 +16,6 @@ export default function FutureDroneDesignsSection() {
   return (
     <>
       <section className="w-full bg-[#E2E0D1] pb-12 pt-6 md:pb-16 md:pt-8">
-        <h2 className="mb-8 text-center text-4xl font-extrabold uppercase leading-none text-[#1f212b] sm:mb-10 sm:text-[3rem]">
-          Future Drone Designs
-        </h2>
-
         <div className="relative w-full">
           <div className="grid w-full grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {CARDS.map(({ src, alt }) => (
@@ -50,10 +46,6 @@ export default function FutureDroneDesignsSection() {
             aria-hidden
           />
         </div>
-
-        <h2 className="mt-8 text-center text-4xl font-extrabold uppercase leading-none text-[#1f212b] sm:mt-10 sm:text-[3rem]">
-          2 In One Flyer
-        </h2>
       </section>
 
       {/* fullscreen image modal */}
