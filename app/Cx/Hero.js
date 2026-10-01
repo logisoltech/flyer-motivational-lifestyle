@@ -66,7 +66,7 @@ export default function Hero() {
       >
         <div className="w-full text-left">
           <p className="max-w-104 font-extrabold uppercase tracking-[0.01em] text-white text-2xl leading-[1.05] drop-shadow-[0_1px_10px_rgba(255,255,255,0.5)] sm:text-[2.05rem] md:text-[2.25rem]">
-            1 FLYER IFFO PARK GO/LIVE/PARK ANYWHERE
+            MD1 FLYER IFFO PARK GO/LIVE/PARK ANYWHERE
           </p>
           <p className="mt-3 max-w-116 text-base font-semibold tracking-[0.01em] text-white/95 drop-shadow-[0_1px_10px_rgba(255,255,255,0.4)] sm:text-lg">
             IFFO: Indentified Freedom Flying Object
